@@ -14,7 +14,7 @@ This repository features a full-stack MEAN (MongoDB, Express, Angular, Node.js) 
 * **Cloud Infrastructure:** AWS EC2 (Ubuntu)
 
 ### Architecture Overview
-The application uses a **Microservices-style** architecture deployed on a single EC2 instance:
+The application uses a Microservices-style architecture deployed on a single EC2 instance:
 1.  **Nginx Container:** Listening on Port 80. Routes `/` to the Angular app and `/api` to the Backend.
 2.  **dd-frontend:** The Angular application (built via multi-stage Docker build).
 3.  **dd-backend:** The Node.js API server listening on Port 8080.
@@ -25,7 +25,7 @@ The application uses a **Microservices-style** architecture deployed on a single
 ## Project Screenshots
 
 ### 1. Live Application (AWS)
-*The deployed application running on the AWS cloud infrastructure.*
+*The deployed application running on the AWS.*
 <img width="1440" height="900" alt="web_page1" src="https://github.com/user-attachments/assets/48866be9-d398-4fc6-bb9f-e3e5c18e1234" />
 
 <img width="1440" height="900" alt="web_page2" src="https://github.com/user-attachments/assets/7f79af05-62d0-4502-8d19-ac69ded5533a" />
@@ -35,17 +35,16 @@ The application uses a **Microservices-style** architecture deployed on a single
 <img width="1440" height="900" alt="gh_action" src="https://github.com/user-attachments/assets/44dbef48-f27e-4387-9833-eda7a3d1f50d" />
 
 ### 3. Docker Hub Registry
-*Custom images (`dd-frontend` and `dd-backend`) successfully pushed to the registry.*
 <img width="1440" height="900" alt="docker_hub" src="https://github.com/user-attachments/assets/9ea83852-2a47-45b9-bdae-e3e0b7ca233f" />
 
 ### 4. AWS Infrastructure & Nginx
-*Proof of EC2 instance running Ubuntu and Nginx configuration routing.*
 <img width="1165" height="48" alt="ec2_info" src="https://github.com/user-attachments/assets/65989750-f521-41cb-87b3-71b70a329144" />
+<img width="468" height="397" alt="nginx_config" src="https://github.com/user-attachments/assets/b16cbf6d-845e-4491-8349-4cb8a381dacb" />
 
 ---
 
-## ⚙️ CI/CD Pipeline Details
-The project utilizes a **GitHub Actions** workflow (`cicd.yml`) to automate the deployment process:
+## CI/CD Pipeline Details
+The project utilizes a GitHub Actions workflow (`cicd.yml`) to automate the deployment process:
 
 1.  **Trigger:** Pushes to the `main` branch.
 2.  **Login to Docker Hub:** Builds optimized images for Frontend and Backend.
@@ -59,7 +58,7 @@ The project utilizes a **GitHub Actions** workflow (`cicd.yml`) to automate the 
 ---
 
 ## Infrastructure Details
-The application is hosted on **Amazon Web Services (AWS)**.
+The application is hosted on Amazon Web Services (AWS).
 
 * **Service:** EC2 (Elastic Compute Cloud)
 * **Region:** us-east-1 (N. Virginia)
