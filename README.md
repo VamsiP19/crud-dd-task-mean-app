@@ -35,7 +35,8 @@ The application uses a Microservices-style architecture deployed on a single EC2
 <img width="1440" height="900" alt="gh_action" src="https://github.com/user-attachments/assets/44dbef48-f27e-4387-9833-eda7a3d1f50d" />
 
 ### 3. Docker Hub Registry
-<img width="1440" height="900" alt="docker_hub" src="https://github.com/user-attachments/assets/9ea83852-2a47-45b9-bdae-e3e0b7ca233f" />
+<img width="1440" height="504" alt="docker_hub_sc" src="https://github.com/user-attachments/assets/77947419-2d42-4965-839c-09048a91f97f" />
+
 
 ### 4. AWS Infrastructure & Nginx
 <img width="1165" height="48" alt="ec2_info" src="https://github.com/user-attachments/assets/65989750-f521-41cb-87b3-71b70a329144" />
