@@ -48,32 +48,33 @@ The application uses a **Microservices-style** architecture deployed on a single
 The project utilizes a **GitHub Actions** workflow (`cicd.yml`) to automate the deployment process:
 
 1.  **Trigger:** Pushes to the `main` branch.
-2.  **Docker Build:** Builds optimized images for Frontend and Backend.
-3.  **Push:** Pushes images to Docker Hub with tags `dd-frontend` and `dd-backend`.
-4.  **Deploy:**
+2.  **Login to Docker Hub:** Builds optimized images for Frontend and Backend.
+3.  **Docker Build:** Builds images for Frontend and Backend.
+4.  **Push:** Pushes images to Docker Hub with tags `dd-frontend` and `dd-backend`.
+5.  **Deploy:**
     * Connects to the AWS EC2 instance via SSH.
     * Pulls the latest code and Docker images.
     * Executes `docker-compose up -d` to perform a zero-downtime update.
 
 ---
 
-## ☁️ Infrastructure Details
+## Infrastructure Details
 The application is hosted on **Amazon Web Services (AWS)**.
 
 * **Service:** EC2 (Elastic Compute Cloud)
-* **Region:** US East (N. Virginia)
+* **Region:** us-east-1 (N. Virginia)
 * **Instance Type:** t3.micro
 * **OS:** Ubuntu 24.04 LTS
 * **Security:** Port 80 (HTTP) and Port 22 (SSH) allowed.
 
 ---
 
-## 📝 Local Setup Instructions
+## Local Setup Instructions
 To run this application locally without AWS:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [YOUR_REPO_URL]
+    git clone https://github.com/VamsiP19/crud-dd-task-mean-app.git
     cd crud-dd-task-mean-app
     ```
 
